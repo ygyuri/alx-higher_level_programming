@@ -1,8 +1,2 @@
 #!/usr/bin/python3
-
-"""
-This module demonstrates an easy printing functionality.
-"""
-
-__import__("sys").stdout.write("#pythoniscool\n")
-
+__import__("os").write(1, "#pythoniscool\n".encode("UTF-8"))
