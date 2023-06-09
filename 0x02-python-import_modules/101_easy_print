@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+"""
+This module demonstrates an easy printing functionality.
+"""
+
+__import__("sys").stdout.write("#pythoniscool\n")
+
