@@ -1,7 +1,11 @@
 #!/usr/bin/node
 
-// ['C is fun', 'Python is cool', 'JavaScript is amazing'].forEach((e) => console.log(e));
+const { argv } = require('process');
 
-const msg = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-
-msg.forEach((element) => console.log(element));
+if (Number(argv[2])) {
+  for (let i = 0; i < Number(argv[2]); i++) {
+    console.log('C is fun');
+  }
+} else {
+  console.log('Missing number of occurrences');
+}
