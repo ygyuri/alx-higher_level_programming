@@ -1,5 +1,11 @@
 #!/usr/bin/node
 
-console.log('C is fun');
-console.log('Python is cool');
-console.log('JavaScript is amazing');
+const { argv } = require('process');
+
+if (argv.length < 3) {
+  console.log('No argument');
+} else if (argv.length === 3) {
+  console.log('Argument found');
+} else {
+  console.log('Arguments found');
+}
